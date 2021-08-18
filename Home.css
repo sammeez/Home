@@ -1,0 +1,124 @@
+body {background-color:#EFEFEF}
+
+/* Header */
+.head {display: flex;
+  align-items: center;
+  justify-content: center;}
+
+img {max-width:90%;}
+#image {flex-basis: 10%;padding-bottom: 0.5%}
+
+#text {font-size: 1vw;line-height: 0%;}
+
+hr {border: 1px solid;}
+#color {color: #c00630;}
+#title {font-family: 'Poppins', sans-serif;font-weight:500;}
+#title2 {font-family: 'Poppins', sans-serif;}
+#subtitle {font-family: 'Poppins', sans-serif;text-align: center;}
+p {font-family: 'Roboto', sans-serif;}
+
+/* Navigation */
+body {margin: 0;font-family: 'Roboto', sans-serif;font-weight: 500;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2e3d6b;
+}
+
+ul.topnav li {overflow: hidden;background-color: #2e3d6b;float: left;}
+
+ul.topnav li a {float: left;display: flex;color: #efefef;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 2vw;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #c4c4c4c4;color: #efefef;}
+
+ul.topnav li a.active {background-color: #242f5c;color: white;font-weight: 700;width: 100%}
+
+@media screen and (max-width: 600px) { 
+  ul.topnav li {float: none;}
+}
+
+/* Map */
+#subtitle {font-family: 'Poppins', sans-serif;text-align: center;font-size: 3vw;}
+
+body { margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: 'Roboto', sans-serif; !important; }
+
+.container { position: relative; overflow: hidden; height: 90vw; background-image:url(Map/Map3.svg);background-size: cover;right: 1%}
+
+input { display: none; }
+
+p { margin: 0; }
+
+.button { color: white; font-weight: bold; font-size: 1.5vw; background-color: #d32f2f; display: block; padding: 10px 16px; border-radius: 100%; cursor: pointer; animation: fadein .5s; animation: pulse 1.5s infinite; }
+
+.button2 {color: white; font-weight: bold; font-size: 1.5vw; background-color: #d32f2f; display: block; padding: 10px 16px; border-radius: 100%;}
+
+.content { background: white; padding: 1rem 1rem 2rem 1rem; text-align: center; display: none; margin: 10%; border-radius: 8px; box-shadow: 0 4px 2px -2px rgba(211,47,47,0); }
+
+.cross { font-weight: bold; font-size: 20px; cursor: pointer;}
+
+#MB { position: absolute; left: 64%; top: 41%;}
+#N { position: absolute; left: 51.5%; top: 50%;}
+#B { position: absolute; left: 72%; top: 32%; }
+#O {position: absolute; left:61.5% ; top:52% ;}
+#R {position: absolute;left: 82%;top: 51%;}
+#T {position: absolute;left: 74%;top: 54%;}
+#STD {position: absolute;left: 39.5%;top: 35.5%;}
+#M {position: absolute;left: 80%;top: 23%;}
+#DR1 {position: absolute;left: 57%;top: 24%;}
+#TU {position: absolute;left: 33%;top: 32%;}
+#DR2 {position: absolute;left: 47%;top: 41%;}
+#C {position: absolute;left: 51.5%;top: 22%;}
+#D {position: absolute;left: 80.5%;top: 16.5%;}
+#SH {position: absolute;left: 8%;top: 34%;}
+#WM {position: absolute;left: 87%;top: 43%;}
+#W {position: absolute;left: 42%;top: 25%;}
+#Hall {position: absolute;left: 51%;top: 30%;}
+#Gym {position: absolute;left: 73%;top: 22%;}
+
+
+#input1:checked ~ #content1,
+#input2:checked ~ #content2,
+#input3:checked ~ #content3, 
+#input4:checked ~ #content4,
+#input5:checked ~ #content5,
+#input6:checked ~ #content6,
+#input7:checked ~ #content7,
+#input8:checked ~ #content8,
+#input9:checked ~ #content9,
+#input10:checked ~ #content10,
+#input11:checked ~ #content11,
+#input12:checked ~ #content12,
+#input13:checked ~ #content13,
+#input14:checked ~ #content14,
+#input15:checked ~ #content15,
+#input16:checked ~ #content16 { display: block !important; animation: fadein .5s; }
+
+input:checked ~ label .button { display: none !important; animation: fadeout .5s; }
+
+.button:hover { color: #d32f2f; background: white; }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }}
+@keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }}
+@keyframes pulse {
+  from { box-shadow: 0 0 0 0px rgba(211, 47, 47); }
+  to { box-shadow: 0 0 0 15px rgba(0, 0, 0, 0); }}
+
+/* Space */
+.space {width: 100%; height: 100%;color: #efefef; padding-bottom: 5px; padding-top: 5px;}
+
+/* Footer*/
+ .foot {padding-top: 2% ;
+  padding-bottom: 2%;
+  width: 100%;
+  background-color: #242f5c;
+  color: #242f5c;
+  text-align: center;
+}
